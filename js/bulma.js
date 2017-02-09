@@ -9,6 +9,7 @@ $(document).ready(function () {
 	$("#contact").click(function () {
 		goContact();
 	});
+	goHome();
 });
 
 function removeScroll() {
