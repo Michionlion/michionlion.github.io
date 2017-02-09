@@ -24,7 +24,7 @@ function goHome() {
 	$("#projects").removeClass('is-active');
 	$("#contact").removeClass('is-active');
 	$.ajax({
-			url: 'html/home',
+			url: 'html/home.html',
 			dataType: 'html',
 			success: function(data) {
 				$("#body").replaceWith(data);
@@ -38,7 +38,7 @@ function goProjects() {
 	$("#home").removeClass('is-active');
 	$("#contact").removeClass('is-active');
 	$.ajax({
-			url: 'html/projects',
+			url: 'html/projects.html',
 			dataType: 'html',
 			success: function(data) {
 				$("#body").replaceWith(data);
@@ -52,7 +52,7 @@ function goContact() {
 	$("#projects").removeClass('is-active');
 	$("#home").removeClass('is-active');
 	$.ajax({
-			url: 'html/contact',
+			url: 'html/contact.html',
 			dataType: 'html',
 			success: function(data) {
 				$("#body").replaceWith(data);
