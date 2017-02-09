@@ -43,7 +43,6 @@ function goProjects() {
 				$("#body").replaceWith(data);
 			}
 		});
-
 }
 
 function goContact() {
