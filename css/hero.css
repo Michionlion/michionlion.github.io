@@ -19,14 +19,6 @@ body {
 	/* exact in js */
 }
 
-#page.long {
-	height: 2000px;
-}
-
-#page.wide {
-	width: 2000px;
-}
-
 html.scrollhid {
 	overflow: hidden;
 }
