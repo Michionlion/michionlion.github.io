@@ -22,8 +22,13 @@ function goHome() {
 	$("#home").addClass('is-active');
 	$("#projects").removeClass('is-active');
 	$("#contact").removeClass('is-active');
-
-	$("#body").replaceWith("<div id=\"body\" class=\"container has-text-centered\"><h1 class=\"title is-2\">Saejin Mahlau-Heinert</h1></div>");
+	$.ajax({
+			url: 'html/home',
+			dataType: 'html',
+			success: function(data) {
+				$("#body").replaceWith(data);
+			}
+		});
 }
 
 function goProjects() {
@@ -35,10 +40,10 @@ function goProjects() {
 			url: 'html/projects',
 			dataType: 'html',
 			success: function(data) {
-				alert(data);
+				$("#body").replaceWith(data);
 			}
 		});
-	$("#body").replaceWith("<div id=\"body\" class=\"container has-text-centered\"><h1 class=\"title is-2\">Projects</h1></div>");
+
 }
 
 function goContact() {
@@ -46,6 +51,11 @@ function goContact() {
 	$("#contact").addClass('is-active');
 	$("#projects").removeClass('is-active');
 	$("#home").removeClass('is-active');
-
-	$("#body").replaceWith("<div id=\"body\" class=\"container has-text-centered\"><h1 class=\"title is-2\">Contact me at saejinmh@gmail.com</h1></div>");
+	$.ajax({
+			url: 'html/contact',
+			dataType: 'html',
+			success: function(data) {
+				$("#body").replaceWith(data);
+			}
+		});
 }
