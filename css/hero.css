@@ -7,8 +7,8 @@ body {
 }
 
 .is-nav-padded {
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 #page.scrollhid {
@@ -21,4 +21,9 @@ body {
 
 html.scrollhid {
 	overflow: hidden;
+}
+
+.copyver-padding {
+	padding: 1px;
+	padding-right: 5px;
 }
