@@ -1,0 +1,4 @@
+removeScroll();
+doNavPadding();
+doVersion();
+goHome();

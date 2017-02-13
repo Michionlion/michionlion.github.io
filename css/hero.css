@@ -7,8 +7,13 @@ body {
 }
 
 .is-nav-padded {
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.iden {
+	color: orange;
+	border: solid green;
 }
 
 #page.scrollhid {
