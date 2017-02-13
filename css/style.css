@@ -32,3 +32,38 @@ html.scrollhid {
 	padding: 1px;
 	padding-right: 5px;
 }
+
+.social-media-icons .icon {
+    display: inline-block;
+    font-size: 42px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    vertical-align: top;
+    width: 48px;
+}
+
+.social-media-icons span a i {
+	color: #c4d8f0;
+	opacity: 0.65;
+}
+
+.social-media-icons span a i:hover {
+	color: #3070b0;
+	opacity: 1;
+}
+
+/*
+.fa-facebook {
+	background:#3b5998
+}
+.fa-linkedin {
+	background:#007bb6
+}
+.fa-twitter {
+	background:#00aced
+}
+.fa-google-plus {
+	background:#dd4b39
+}
+*/
