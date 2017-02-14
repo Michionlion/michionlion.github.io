@@ -6,7 +6,7 @@ $(document).ready(function () {
 		goProjects();
 	});
 	$("#contact").click(function () {
-		goContact();
+		goResume();
 	});
 	$(window).resize(updateWindowSize);
 });
@@ -86,13 +86,13 @@ function goProjects() {
 	});
 }
 
-function goContact() {
-	console.log("contact");
+function goResume() {
+	console.log("resume");
 	$("#contact").addClass('is-active');
 	$("#projects").removeClass('is-active');
 	$("#home").removeClass('is-active');
 	$.ajax({
-		url: 'html/contact.html'
+		url: 'html/resume.html'
 		, dataType: 'html'
 		, success: function (data) {
 			$("#body").html(data);
