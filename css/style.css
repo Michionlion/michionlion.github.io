@@ -33,17 +33,52 @@ html.scrollhid {
 	padding-right: 5px;
 }
 
-.social-media-icons .icon {
-    display: inline-block;
-    font-size: 42px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    vertical-align: top;
-    width: 48px;
+.social-media-icons {
+	padding: 0px;
+	margin: 0px;
 }
 
-.social-media-icons span a i {
+.social-media-icons .icon {
+	display: inline-block;
+	font-size: 42px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	vertical-align: top;
+	width: 48px;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+@media (max-width: 415px) {
+	#name {
+		font-size: 32px;
+	}
+	#job {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 340px) {
+	#name {
+		font-size: 26px;
+	}
+	#job {
+		font-size: 12px;
+	}
+}
+
+
+/* HACK to center icons without weird padding */
+
+.social-media-icons .icon.is-center {
+	margin-right: 0px;
+	margin-left: 4px;
+}
+
+.social-media-icons span i {
 	color: #c4d8f0;
 	opacity: 0.65;
 }
@@ -52,6 +87,7 @@ html.scrollhid {
 	color: #3070b0;
 	opacity: 1;
 }
+
 
 /*
 .fa-facebook {

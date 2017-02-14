@@ -1,4 +1,4 @@
 removeScroll();
-doNavPadding();
+updateWindowSize();
 doVersion();
 goHome();

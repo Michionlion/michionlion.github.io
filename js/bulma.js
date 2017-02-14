@@ -8,7 +8,7 @@ $(document).ready(function () {
 	$("#contact").click(function () {
 		goContact();
 	});
-	$(window).resize(doNavPadding);
+	$(window).resize(updateWindowSize);
 });
 
 function removeScroll() {
@@ -23,6 +23,27 @@ function doNavPadding() {
 	console.log(padding);
 	$(".is-nav-padded").css("paddingLeft", padding);
 	$(".is-nav-padded").css("paddingRight", padding);
+}
+
+function doSizeChecks() {
+	/*//could use is-mobile-3, etc, but those use screen not window
+	if (window.innerWidth < 415) {
+		//$("#name").removeClass("is-2");
+		$("#name").addClass("is-3");
+		//$("#job").removeClass("is-5");
+		$("#job").addClass("is-6");
+	}
+	else {
+		//$("#name").removeClass("is-2");
+		$("#name").removeClass("is-3");
+		//$("#job").removeClass("is-5");
+		$("#job").removeClass("is-6");
+	}*/
+}
+
+function updateWindowSize() {
+	doNavPadding();
+	doSizeChecks();
 }
 
 function doVersion() {
@@ -44,7 +65,9 @@ function goHome() {
 		url: 'html/home.html'
 		, dataType: 'html'
 		, success: function (data) {
-			$("#body").replaceWith(data);
+			//check sizes and switch size (HACKY HACKERMCHACKSON)
+			$("#body").html(data);
+			doSizeChecks();
 		}
 	});
 }
@@ -58,7 +81,7 @@ function goProjects() {
 		url: 'html/projects.html'
 		, dataType: 'html'
 		, success: function (data) {
-			$("#body").replaceWith(data);
+			$("#body").html(data);
 		}
 	});
 }
@@ -72,7 +95,7 @@ function goContact() {
 		url: 'html/contact.html'
 		, dataType: 'html'
 		, success: function (data) {
-			$("#body").replaceWith(data);
+			$("#body").html(data);
 		}
 	});
 }
