@@ -52,16 +52,16 @@ html.scrollhid {
 	margin-right: 6px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 450px) {
 	#name {
 		font-size: 32px;
 	}
 	#job {
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
 	#name {
 		font-size: 26px;
 	}
@@ -69,7 +69,6 @@ html.scrollhid {
 		font-size: 12px;
 	}
 }
-
 
 /* HACK to center icons without weird padding */
 
