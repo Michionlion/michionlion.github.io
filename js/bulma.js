@@ -20,25 +20,14 @@ function removeScroll() {
 function doNavPadding() {
 	//generalize this by finding 130 dynamically, and 6 dynamically (3*elements)
 	var padding = parseInt((window.innerWidth - 130) / 6) + "px";
-	console.log(padding);
+	//console.log(padding);
 	$(".is-nav-padded").css("paddingLeft", padding);
 	$(".is-nav-padded").css("paddingRight", padding);
 }
 
 function doSizeChecks() {
-	/*//could use is-mobile-3, etc, but those use screen not window
-	if (window.innerWidth < 415) {
-		//$("#name").removeClass("is-2");
-		$("#name").addClass("is-3");
-		//$("#job").removeClass("is-5");
-		$("#job").addClass("is-6");
-	}
-	else {
-		//$("#name").removeClass("is-2");
-		$("#name").removeClass("is-3");
-		//$("#job").removeClass("is-5");
-		$("#job").removeClass("is-6");
-	}*/
+	var height = window.innerHeight - $(".hero-head").height() - $(".hero-footer").height();
+	$("#resume-pdf").css("height", height);
 }
 
 function updateWindowSize() {
@@ -67,7 +56,6 @@ function goHome() {
 		, success: function (data) {
 			//check sizes and switch size (HACKY HACKERMCHACKSON)
 			$("#body").html(data);
-			doSizeChecks();
 		}
 	});
 }
@@ -96,6 +84,7 @@ function goResume() {
 		, dataType: 'html'
 		, success: function (data) {
 			$("#body").html(data);
+			doSizeChecks();
 		}
 	});
 }
