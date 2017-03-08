@@ -2,6 +2,8 @@
 
 html, body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	min-width: 300px;
+	min-height: 120px;
 }
 
 .header-image {

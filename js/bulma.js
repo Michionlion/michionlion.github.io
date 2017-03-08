@@ -18,9 +18,9 @@ function removeScroll() {
 }
 
 function doNavPadding() {
-	//generalize this by finding 130 dynamically, and 6 dynamically (3*elements)
-	var padding = parseInt((window.innerWidth - 130) / 6) + "px";
-	//console.log(padding);
+	//generalize this by finding inner widths dynamically, and 6 dynamically (2*elements)
+	var padding = ((window.innerWidth - (37.656+51.297+50.672)) / 6) + "px";
+	// console.log(padding);
 	$(".is-nav-padded").css("paddingLeft", padding);
 	$(".is-nav-padded").css("paddingRight", padding);
 }
