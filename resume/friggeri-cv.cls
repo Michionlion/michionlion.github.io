@@ -46,17 +46,17 @@
 % Fonts %
 %%%%%%%%%
 
-% \RequirePackage[quiet]{fontspec}
-% \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-% 
-% \newfontfamily\bodyfont[]{Helvetica Neue}
-% \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-% \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
-% 
-% \defaultfontfeatures{Mapping=tex-text}
-% \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
-% 
-% \setmathfont{XITS Math}
+%\RequirePackage[quiet]{fontspec}
+%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+
+%\newfontfamily\bodyfont[]{Helvetica Neue}
+%\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
+%\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+
+%\setmathfont{XITS Math}
 
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
@@ -96,17 +96,17 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.25cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{48pt}{72pt}\color{header}%
       {\thinfont #1} {\bodyfont \vert} {\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{12pt}{28pt}\color{header}%
-      \thinfont #3%
+      {\thinfont #3}%
     };
   \end{tikzpicture}
-  \vspace{2.5cm}
+  \vspace{1.5cm}
   \vspace{-2\parskip}
 }
 
@@ -184,7 +184,8 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  %{3.6}(1.5, 4.33)
+  \begin{textblock}{4.6}(0.8, 3.33)
   \begin{flushright}
   \obeycr
 }{%
