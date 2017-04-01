@@ -1,11 +1,12 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-cv}
 \usepackage{fontawesome}
+\usepackage{enumitem}
 \addbibresource{bibliography.bib}
 
 \begin{document}
 \header{saejin}{mahlau-heinert}
-       {\faMobilePhone\ (757)-777-4868 \hspace{1cm} 221 W. Bayview Blvd, Norfolk, VA, 23503 \hspace{1cm} \faEnvelope\ saejinmh@gmail.com}
+       {\faMobilePhone\hspace{1mm}(757)-777-4868 \hspace{1cm} 221 W. Bayview Blvd, Norfolk, VA, 23503 \hspace{1.5cm} \faEnvelope\hspace{1.5mm}saejinmh@gmail.com}
 
 % In the aside, each new line forces a line break
 \begin{aside}
@@ -38,10 +39,9 @@
 
 \section{interests}
 
-computer visualization, programming languages, compilers, robotics, artificial intelligence, video game development, game engines,  narrative-driven design, interactive art, virtual reality development, virtual reality hardware-software interactions
+artificial intelligence, compilers, computer visualization, game engines, interactive art, linear algebra, narrative-driven design, programming languages, robotics, software development, video game development, virtual reality development, virtual reality hardware-software interactions
 
 \section{education}
-
 \begin{entrylist}
   \entry
     {since 2015}
@@ -55,14 +55,25 @@ computer visualization, programming languages, compilers, robotics, artificial i
 \begin{entrylist}
   \entry
     {since 2016}
-    {Computer Science TA}
-    { Computer Science Department, Allegheny}
-    {Answer questions and grade work in lower-level CS classes; help plan and create labs. Developed script tools to assist with grading.\\Tools utilized: \emph{\LaTeX , Bash}}
+    {Computer Science Teaching Assistant}
+    {Allegheny College}
+    {\emph{Computer Science Department}
+    \begin{itemize}[leftmargin=1.2em]
+    \item Answer questions and grade work in lower-level CS classes
+    \item Help plan and create labs, developed script tools to assist with grading
+    \item Tools utilized: \emph{\LaTeX , Bash}
+    \end{itemize}}
   \entry
     {Apr--Jul 2015}
     {Carr Garden Android Application}
-    { Carrden Market, Allegheny}
-    {Created accounting and transaction application for Carrden Market. Using Java, developed a native Android application that uses Google APIs to sync accounting data and transaction histories among multiple tablets, along with generating reports and adding new transactions.\\Tools utilized: \emph{Java, Netbeans, Android Studio, Android SDK}}
+    {Allegheny College}
+    {\emph{Carrden Market}
+    \begin{itemize}[leftmargin=1.2em]
+    \item Developed native Android application to support accounting and transactions for the college garden
+    \item Used Google APIs to sync accounting data and transaction histories among multiple tablets
+    \item Implemented algorithm to create transaction reports
+    \item Tools utilized: \emph{Java, Netbeans, Android Studio, Android SDK}
+    \end{itemize}}
 \end{entrylist}
 
 \section{projects}
@@ -72,11 +83,32 @@ computer visualization, programming languages, compilers, robotics, artificial i
     {since 2017}
     {\texttt{>}brainfuse}
     {Programming Language}
-    {\emph{Compiler, interpreter, \& language extension of brainf**k}\\Programmed primarily in C, this project grew organically out of an initial interpreter and compiler built out of curiosity. While still in progress, preprocessing directives, functions, and language concept extensions are planned. Preprocessing directives such as file inclusion are complete, and more complex preprocessing involving a psuedo-instruction language will be finished soon. These psuedo-instructions will enable brainfuse programmers to easily generate code to set the datapointer to some value, or print out a string. Various script utilities have also been developed to simplify compiling and running brainfuse code.\\Tools utilized: \emph{C, Bash}}
+    {\emph{Compiler, interpreter, \& language extension of brainf**k}
+    \begin{itemize}[leftmargin=1.2em]
+    \item Programmed interpreter, compiler, pre-processor, and language extension for the brainf**k programming language
+    \item Implemented pre-processing directives, such as file inclusion, and currently designing more complex psuedo-instruction directives to facilitate the generation of boilerplate code
+    \item Developed multiple command-line tools and script utilities to simplify compiling and running \texttt{>}brainfuse code
+    \item Tools utilized: \emph{C, Bash}
+    \end{itemize}}
+    
   \entry
-    {Nov--Dec 2016}
-    {Doorway}
-    {VR Art Installation}
-    {\emph{Art with Portals}\\Developed using the Unity game engine and Steam's Vive SDK, this project implements portal visualization through the use of shaders and matrix transformations. It attempts to evoke emotion of a stark and mysterious landscape. The user starts in a small room, with a \lq portal\rq\ device in front of them, which leads to a bleak, tree-dotted landscape. The user can move back and forth through the portal at will.\\Tools utilized: \emph{Unity, C\#, HLSL, Unity Shader Language, Vive SDK}}
+    {March 2017}
+    {bebop\textunderscore teleop}
+    {ROS Package}
+    {\emph{Parrot Bebop Drone Teleoperation Node}
+    \begin{itemize}[leftmargin=1.2em]
+    \item Designed and developed teleoperation program to operate Parrot Bebop quadrotor drone
+    \item Implemented greater customizability than other extant tools provide
+    \item Enabled speed configuration changes and camera direction control
+    \item Tools utilized: \emph{C++, SDL, ROS}
+    \end{itemize}
+    }
+    
+    
+%  \entry
+%    {Nov--Dec 2016}
+%    {Doorway}
+%    {VR Art Installation}
+%    {\emph{Art with Portals}\\Developed using the Unity game engine and Steam's Vive SDK, this project implements portal visualization through the use of shaders and matrix transformations. It attempts to evoke emotion of a stark and mysterious landscape. The user starts in a small room, with a \lq portal\rq\ device in front of them, which leads to a bleak, tree-dotted landscape. The user can move back and forth through the portal at will.\\Tools utilized: \emph{Unity, C\#, HLSL, Unity Shader Language, Vive SDK}}
 \end{entrylist}
 \end{document}
