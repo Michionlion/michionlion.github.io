@@ -11,7 +11,7 @@ html, body {
 }
 
 .hero-body {
-	padding: 0px;
+	padding: 0;
 }
 
 #resume-pdf {
@@ -45,7 +45,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	padding-right: 0px;
+	padding-right: 0;
 	/* exact in js */
 }
 
@@ -59,8 +59,8 @@ html.scrollhid {
 }
 
 .social-media-icons {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 .social-media-icons .icon {
@@ -71,8 +71,8 @@ html.scrollhid {
 	text-align: center;
 	vertical-align: top;
 	width: 48px;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	margin-left: 6px;
 	margin-right: 6px;
 }
@@ -98,8 +98,8 @@ html.scrollhid {
 /* HACK to center icons without weird padding */
 
 .social-media-icons .icon.is-center {
-	margin-right: 0px;
-	margin-left: 4px;
+	margin-right: 0;
+	margin-left: 4;
 }
 
 .social-media-icons span i {
@@ -111,19 +111,3 @@ html.scrollhid {
 	color: #3070b0;
 	opacity: 1;
 }
-
-
-/*
-.fa-facebook {
-	background:#3b5998
-}
-.fa-linkedin {
-	background:#007bb6
-}
-.fa-twitter {
-	background:#00aced
-}
-.fa-google-plus {
-	background:#dd4b39
-}
-*/
