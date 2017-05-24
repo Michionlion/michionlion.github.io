@@ -1,6 +1,5 @@
 <html>
 <title>Gator Grader Documentation</title>
-<head>
 <!-- Pleace this snippet right after opening the head tag to make it work properly -->
 
 <!-- This code is licensed under GNU GPL v3 -->
@@ -27,5 +26,4 @@
 </script>
 <!-- Credit goes to http://insider.zone/ -->
 <!-- REDIRECTING ENDS -->
-</head>
 </html>
