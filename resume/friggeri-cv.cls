@@ -46,9 +46,6 @@
 % Fonts %
 %%%%%%%%%
 
-%\RequirePackage[quiet]{fontspec}
-%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-
 %\newfontfamily\bodyfont[]{Helvetica Neue}
 %\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
 %\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
@@ -60,7 +57,7 @@
 
 %%% modified by Karol Kozioł for ShareLaTex use
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
