@@ -131,19 +131,19 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{0.80\parskip}
   {%
     \LARGE\headingfont\color{headercolor} #1%
   }
-  \par\vspace{\parskip}
+  \par\vspace{0.375\parskip}
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  \par\vspace{0.35\parskip}%
   {%
   \large\headingfont\color{headercolor} #1%
   }
-  \par\vspace{.25\parskip}%
+  \par\vspace{0.20\parskip}%
 }
 
 \pagestyle{empty}
@@ -161,7 +161,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11cm}{%
+  {\footnotesize\addfontfeature{Color=lightgray} #1}&\parbox[t]{11cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -305,5 +305,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
