@@ -97,7 +97,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.25cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{48pt}{72pt}\color{header}%
-      {\thinfont #1} {\bodyfont \vert} {\bodyfont  #2}
+      {\thinfont #1} {\bodyfont \hspace{9pt}} {\bodyfont #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{12pt}{28pt}\color{header}%
@@ -135,7 +135,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   {%
     \LARGE\headingfont\color{headercolor} #1%
   }
-  \par\vspace{0.375\parskip}
+  \par\vspace{0.3\parskip}
 }
 
 \renewcommand{\subsection}[1]{
